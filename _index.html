@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Shop Page 문영민</title>
+        <link rel="stylesheet" type="text/css" href="_mystyle.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+            footer{
+                font-size: 12px;
+            }
+            div h4{
+                font-family: 'Staatliches', cursive;
+            }
+            div{
+                font-family: 'Do Hyeon', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="_index.html">Web Shop</a>
+            </h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="_index.html">Home</a></li>
+                <li><a target="iframe1" href="_AboutUs.html">About Us</a></li>
+                <li><a target="iframe1" href="_News.html">News</a></li>
+                <li><a target="iframe1" href="_Contacts.html">Contacts</a></li>
+            </ul>
+        </nav>  
+        <aside id="left">
+            <h4>카테고리</h4>
+            <ul>
+                <li><a target="iframe1" href="_computer.html">데스크탑/노트북</a></li>
+                <li><a target="iframe1" href="_music.html">음악</a></li>
+                <li><a target="iframe1" href="_movie.html">영화</a></li>
+                <li><a target="iframe1" href="_sports.html">신발</a></li>
+                <li><a target="iframe1" href="_furniture.html">가구/인테리어</a></li>
+                <li><a target="iframe1" href="_book.html">책</a></li>
+            </ul>
+        </aside>    
+        <section id="main">
+            <article id="article1">
+                <iframe name="iframe1" src="_computer.html" width="420" height="300" seamless></iframe>
+            </article>
+        </section>
+        <aside id="right">
+            <div id="login">
+                <h4>Log In</h4>
+                <form action="#">
+                    <input type="text"placeholder="id"/><br>
+                    <input type="password" placeholder="password"><br>
+                    <input type="submit" value="로그인">
+                    <input type="reset" value="초기화"><br>
+                    <a href="_register.html" target="_blank" id="register">회원가입</a>
+                    <a href="#" id="forgot">비밀번호분실</a>
+                </form>
+                <br>
+            </div>
+            <div id="shopcart">
+                <h4>Shopping Cart</h4>
+                현재 쇼핑카트에 물품이 없습니다.<br>
+                <a href="_shopcart.html">쇼핑카트 보기</a>
+            </div>
+        
+        </aside>
+        <footer>Copyright (c) 2013 Web Shop</footer>
+    </body>
+</html>
+
